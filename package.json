@@ -1,0 +1,19 @@
+{
+  "name": "matthew-han-personal-portfolio-site-2019",
+  "version": "1.0.0",
+  "description": "my updated website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewLeeHan/Personal-Site-2019.git"
+  },
+  "author": "Matthew Han",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MatthewLeeHan/Personal-Site-2019/issues"
+  },
+  "homepage": "https://github.com/MatthewLeeHan/Personal-Site-2019#readme"
+}
