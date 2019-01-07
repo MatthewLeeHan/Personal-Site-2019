@@ -1,12 +1,23 @@
 // begin main.html CSS
 $primary-font: "Poppins", sans-serif;
+$secondary-color: #77FFBC;
 
 @mixin easeOut{
     transition: all 0.5s ease-out;
 }
 
 body{
-    background: grey;
+    background: #000;
+    font-family: $primary-font;
+}
+.my_name{
+    position: absolute;
+    z-index: 2;
+    top: 27px;
+    left: 35px;
+    color: $secondary-color;
+    margin: 0px;
+    padding: 0px;
 }
 .menu-btn{
     position: absolute;
@@ -20,7 +31,7 @@ body{
       width: 28px;
       height: 3px;
       margin: 0 0 5px 0;
-      background: #fff;
+      background: $secondary-color;
     }
 
     // rotate into X with menu lines
@@ -85,7 +96,7 @@ body{
         padding: 1rem 0;
 
         &.current > a {
-            color: #77FFBC;
+            color: $secondary-color;
         }
         .nav-link{
             text-decoration: none;
