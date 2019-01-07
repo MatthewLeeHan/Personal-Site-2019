@@ -1,5 +1,70 @@
 $primary-color: rgb(255, 255, 255);
-
+$primary-font: "Poppins", sans-serif;
+$default-font-size: 1rem;
+$default-line-height: 1.5;
+*{
+  box-sizing: border-box;
+}
 body {
   background: $primary-color;
+  font-family: $primary-font;
+  font-size: $default-font-size;
+  line-height: $default-line-height;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
+
+.v-header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.fullscreen-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  video{
+    min-height: 100%;
+    min-width: 100%;
+  }
+}
+.header-content {
+  z-index: 2;
+  margin: 0 auto;
+  h1{
+    font-size: 6vw;
+  }
+  .btn{
+    z-index: 2;
+    font-family: $primary-font;
+    background: none;
+    border: .2em solid #fff;
+    &:hover{
+      border:.3em solid #77FFBC;
+      transition: all 0.5s ease-out;
+    }
+    a{
+      text-decoration: none;
+      color: #fff;
+      background: none;
+      font-size: 2rem;
+      padding: 1rem 1.5rem;
+    }
+  }
+
+}
+
