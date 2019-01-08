@@ -1,6 +1,11 @@
+canvas {
+  position: absolute; }
+
 body {
   background: #000;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0; }
 
 .my_name {
   position: absolute;
@@ -80,11 +85,14 @@ main .about-me-title {
   font-size: 90px;
   z-index: 3;
   margin-top: -68px;
-  font-weight: bold; }
+  font-weight: bold;
+  overflow: hidden; }
 
 main .title-holder {
   position: absolute;
-  margin-top: -67px; }
+  margin-top: -67px;
+  width: auto;
+  margin-left: 50px; }
 
 main .main-container {
   display: flex;
@@ -109,4 +117,4 @@ main .main-container {
 
 .typed-cursor {
   color: white;
-  font-size: 90px; }
+  font-size: 80px; }

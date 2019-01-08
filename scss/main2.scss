@@ -6,9 +6,16 @@ $secondary-color: #77FFBC;
     transition: all 0.5s ease-out;
 }
 
+canvas{
+    // z-index: 9;
+    position: absolute;
+}
+
 body{
     background: #000;
     font-family: $primary-font;
+    margin: 0;
+    padding: 0;
 }
 .my_name{
     position: absolute;
@@ -123,10 +130,13 @@ body{
         z-index: 3;
         margin-top: -68px;
         font-weight: bold;
+        overflow: hidden;
     }
     .title-holder{
         position: absolute;
         margin-top: -67px;
+        width: auto;
+        margin-left: 50px;
     }
     .main-container{
         display: flex;
@@ -158,5 +168,5 @@ body{
   
   .typed-cursor{
       color: white;
-      font-size: 90px;
+      font-size: 80px;
   }
