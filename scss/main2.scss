@@ -84,7 +84,6 @@ body{
           padding: 0;
           list-style: none;
           transform: translate3d(100%, 0, 0);
-          
           @include easeOut();
 
           &.show {
@@ -109,4 +108,55 @@ body{
         }
       }
 
+  }
+
+  main{
+    .bio-pic{
+        // width: 45rem;
+        width: 40vw;
+        margin: 5rem 0 0 2rem;
+        display: inline-block;
+    }
+    .about-me-title{
+        color: #fff;
+        font-size: 90px;
+        z-index: 3;
+        margin-top: -68px;
+        font-weight: bold;
+    }
+    .title-holder{
+        position: absolute;
+        margin-top: -67px;
+    }
+    .main-container{
+        display: flex;
+        align-items: center;
+        .left-side{
+            flex: 1;
+        }
+        .right-side{
+            flex: 1;
+            color: #fff;
+            font-family: $primary-font;
+            display: inline-block;
+            .paragraph{
+                font-size: 30px;
+                margin-right: 100px;
+            }
+            .cv{
+                color: #fff;
+                font-family: $primary-font;
+                font-size: 30px;
+                a{
+                    text-decoration: none;
+                    color: $secondary-color;
+                }
+            }
+            }
+        }
+    }   
+  
+  .typed-cursor{
+      color: white;
+      font-size: 90px;
   }
